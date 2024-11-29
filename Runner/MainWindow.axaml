@@ -1,0 +1,41 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="480"
+        Width="640" Height="480"
+        MinWidth="640" MinHeight="480"
+        MaxWidth="640" MaxHeight="480"
+        x:Class="Runner.MainWindow"
+        Title="Video"
+        CanResize="False">
+
+    <TabControl>
+    
+        <!-- Analysis Tab -->
+        <TabItem>
+      
+            <!-- Analysis Tab Header -->
+            <TabItem.Header>
+                <TextBlock VerticalAlignment="Center" Text="Video"></TextBlock>
+            </TabItem.Header>
+            <!-- END Analysis Tab Header -->
+      
+            <!-- Analysis Stack Panel -->
+            <StackPanel Orientation="Vertical">
+        
+                <Button Name="RunVideoButton" Margin="20">Run Video</Button>
+                <Canvas Name="Canvas" Width="640" Height="480">
+                    <Image Name="PreviewImage" Width="640" Height="480" Stretch="Fill" />
+                    <Image Name="OverlayImage" Width="640" Height="480" Stretch="Fill" />
+                </Canvas>
+        
+            </StackPanel>
+            <!-- END Analysis Stack Panel --> 
+      
+        </TabItem>
+        <!-- END Analysis Tab -->
+    
+    </TabControl>
+  
+</Window>
