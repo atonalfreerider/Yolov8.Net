@@ -1,4 +1,4 @@
-﻿using Microsoft.ML.OnnxRuntime.Tensors;
+using Microsoft.ML.OnnxRuntime.Tensors;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Advanced;
 using SixLabors.ImageSharp.PixelFormats;
